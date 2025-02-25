@@ -1,6 +1,6 @@
 # Guide-and-Rescale: Self-Guidance Mechanism for Effective Tuning-Free Real Image Editing (ECCV 2024)
 
-<a href=""><img src="https://img.shields.io/badge/arXiv-2408.12345-b31b1b.svg" height=22.5></a>
+<a href="https://arxiv.org/abs/2409.01322"><img src="https://img.shields.io/badge/arXiv-2409.01322-b31b1b.svg" height=22.5></a>
 <a href="https://huggingface.co/spaces/AIRI-Institute/Guide-and-Rescale"><img src="https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-md.svg" height=22.5></a>
 <a href="https://colab.research.google.com/drive/1noKOOcDBBL_m5_UqU15jBBqiM8piLZ1O?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" height=22.5></a>
 [![License](https://img.shields.io/github/license/AIRI-Institute/al_toolbox)](./LICENSE)
@@ -38,7 +38,7 @@ We also provide [a jupyter notebook](example_notebooks/guide_and_rescale.ipynb) 
 </p>
 <p align="center">
   <br>
-    Overall scheme of the proposed method Guide-and-Rescale. First, our method uses a classic ddim inversion of the source real image. Then the method performs real image editing via classical denoising process. For every denoising step the noise term is modified by guider that utilizes latents $z_t$ from current generation process and time-aligned ddim latents $z^*_t$.
+    Overall scheme of the proposed method Guide-and-Rescale. First, our method uses a classic ddim inversion of the source real image. Then the method performs real image editing via the classical denoising process. For every denoising step the noise term is modified by guider that utilizes latents $z_t$ from the current generation process and time-aligned ddim latents $z^*_t$.
 </p>
 
 
@@ -104,3 +104,15 @@ When the data from the `output` property of the guiders class object is stored i
 ## References & Acknowledgments
 
 The repository was started from [Prompt-to-Prompt](https://github.com/google/prompt-to-prompt/). 
+
+## Citation
+
+If you use this code for your research, please cite our paper:
+```
+@article{titov2024guideandrescale
+  title={Guide-and-Rescale: Self-Guidance Mechanism for Effective Tuning-Free Real Image Editing},
+  author={Vadim Titov and Madina Khalmatova and Alexandra Ivanova and Dmitry Vetrov and Aibek Alanov},
+  journal={arXiv preprint arXiv:2409.01322},
+  year={2024}
+}
+```
